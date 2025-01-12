@@ -1,3 +1,12 @@
+class ICTStrategy:
+    """Base class for ICT strategies."""
+
+    def enter_trade(self, market_data):
+        raise NotImplementedError("Subclasses should implement this!")
+
+    def exit_trade(self, market_data):
+        raise NotImplementedError("Subclasses should implement this!")
+
 class OrderBlockStrategy(ICTStrategy):
     """basic order block strategy."""
 
