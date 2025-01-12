@@ -16,4 +16,14 @@ class Backtester:
             entry_signal = self.strategy.enter_trade(self.data.loc[:index])
             if entry_signal:
                 self.execute_trade(entry_signal, row)
-                
+
+    def execute_trade(self, signal, row):
+        """for me to execute a trade based on the signal i got"""
+        trade = {
+            'date': row.name,
+            'type': signal['type'],
+            'entry_price': signal['price'],
+            'risk': self.risk_per_trade * self.current_capital
+        }
+        self.trades.append(trade)
+        print(f'Executed trade: {trade}')
