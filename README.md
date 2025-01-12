@@ -28,3 +28,7 @@ i also created the data loader too:
 for now, i think i want to define a custom strategy for this, maybe order block strategy first.
 
 let me run the backtest atp:
+```python
+    backtester = Backtester(strategy, data)
+    backtester.run()
+```
