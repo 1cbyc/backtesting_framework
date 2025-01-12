@@ -11,3 +11,5 @@ class DataLoader:
     def fetch_data(self):
         """trying to fetch historical price data using yfinance"""
         data = yf.download(self.symbol, start=self.start_date, end=self.end_date, interval=self.interval)
+        data.dropna(inplace=True)
+        return data
