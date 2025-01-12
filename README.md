@@ -41,3 +41,4 @@ time to evaluate the performance of the model i am learning:
     performance.plot_performance()
 ```
 
+since it is the weekend, i need to test this strategy on crypto markets.
