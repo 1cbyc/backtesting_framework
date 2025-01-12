@@ -39,3 +39,4 @@ class ICTStrategy:
         elif last_candle['Close'] < last_candle['Low'] + 0.001:
             return {'type': 'buy', 'price': last_candle['Close']}
         return None
+
