@@ -56,3 +56,6 @@ so, i will `download_data` to fetch the market data from the data provider endpo
 i just finished coding the `engine.py` itself. so now i have added the backtester class to handle executing trades based on the strategy signals. i also added `execute_trade` class to execute buy and sell orders, and also updating cash and position. however, the `run` class i added is to help me loop through the data and execute the strategy signals. as well as the  `get_balance` class to return the account balance (cash + position value) over time...as much as i also added the `get_trade_log` class to return the log of trades made during the backtest.
 
 i admit, my order block strategy is a simple strategy that generates a "buy" signal if the closing price is above the 5-period moving average and a "sell" signal if it’s below.
+
+let me work out the performance metrics side of things. creating the `performance.py` script is the way to go right now. let me see if i can wrap my head around it.
+
