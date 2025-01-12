@@ -40,3 +40,24 @@ class ICTStrategy:
             return {'type': 'buy', 'price': last_candle['Close']}
         return None
 
+
+class OrderBlockStrategy(ICTStrategy):
+    """simple order block strategy."""
+
+    def enter_trade(self, market_data):
+        """the logic to enter a trade based on order block."""
+        last_candle = market_data.iloc[-1]
+        if last_candle['Close'] > last_candle['High'] - 0.001:  # Example logic
+            return {'type': 'buy', 'price': last_candle['Close']}
+        elif last_candle['Close'] < last_candle['Low'] + 0.001:
+            return {'type': 'sell', 'price': last_candle['Close']}
+        return None
+
+    def exit_trade(self, market_data):
+        """another logic to exit the trade."""
+        last_candle = market_data.iloc[-1]
+        if last_candle['Close'] > last_candle['High'] - 0.001:
+            return {'type': 'sell', 'price': last_candle['Close']}
+        elif last_candle['Close'] < last_candle['Low'] + 0.001:
+            return {'type': 'buy', 'price': last_candle['Close']}
+        return None
