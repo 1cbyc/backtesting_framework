@@ -33,3 +33,11 @@ let me run the backtest atp:
     backtester.run()
 ```
 
+time to evaluate the performance of the model i am learning:
+```python
+    performance = Performance(backtester.trades)
+    metrics = performance.calculate_metrics()
+    print(metrics)
+    performance.plot_performance()
+```
+

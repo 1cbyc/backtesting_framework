@@ -9,6 +9,7 @@ class ICTStrategy:
             dict: Signal with details (e.g., entry price, trade type).
         :param market_data:
         :return:
+        i want to try out the order block strategy to make it work
         """
         raise NotImplementedError("Subclasses should implement this method.")
 
