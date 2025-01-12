@@ -28,4 +28,11 @@ class Backtester:
             if signal = 'buy':
                 self.execute_trade('buy', self.data['close'].iloc[i], 1) # buy 1 unit
             elif signal == 'sell':
-                self.execute_trade()
+                self.execute_trade('sell', self.data['close'].iloc[i], 1) # sell 1 unit
+            self.balance.append(self.cash + self.position * self.data['close'].iloc[i])
+
+    def get_balance(self):
+        return pd.Series(self.balance, index=self.data.index)
+
+    def get_trade_log(self):
+        return self.trade_log

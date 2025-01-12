@@ -52,3 +52,5 @@ i think i want to change the approach i take, let me put three strategies we can
 i want to get data from OANDA, dukascopy or Alpha Vantage API outrightly.
 
 so, i will `download_data` to fetch the market data from the data provider endpoint, then `resample_data` to get the data to the desired timeframe i intend to use. well, i also `clean_data` to remove the missing values from the marketdata i got.
+
+i just finished coding the `engine.py` itself. so now i have added the backtester class to handle executing trades based on the strategy signals
