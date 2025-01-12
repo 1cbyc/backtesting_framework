@@ -53,4 +53,4 @@ i want to get data from OANDA, dukascopy or Alpha Vantage API outrightly.
 
 so, i will `download_data` to fetch the market data from the data provider endpoint, then `resample_data` to get the data to the desired timeframe i intend to use. well, i also `clean_data` to remove the missing values from the marketdata i got.
 
-i just finished coding the `engine.py` itself. so now i have added the backtester class to handle executing trades based on the strategy signals
+i just finished coding the `engine.py` itself. so now i have added the backtester class to handle executing trades based on the strategy signals. i also added `execute_trade` class to execute buy and sell orders, and also updating cash and position. however, the `run` class i added is to help me loop through the data and execute the strategy signals. as well as the  `get_balance` class to return the account balance (cash + position value) over time...as much as i also added the `get_trade_log` class to return the log of trades made during the backtest.
