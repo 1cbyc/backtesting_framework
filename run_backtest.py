@@ -15,3 +15,9 @@ backtester = Backtester(strategy, data)
 backtester.run()
 
 # evaluate performance
+performance = Performance(backtester.trades)
+metrics = performance.calculate_metrics()
+print("Performance Metrics:", metrics)
+
+# to visualize performance
+performance.plot_performance()
