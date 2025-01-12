@@ -173,8 +173,9 @@ cython_debug/
 # not needed
 hide.c
 hide
+hide.py
 hi.exe
 hi
 ./hi
 ./hi.exe
-fuck
+fuck.py
