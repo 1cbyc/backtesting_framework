@@ -32,3 +32,4 @@ let me run the backtest atp:
     backtester = Backtester(strategy, data)
     backtester.run()
 ```
+
