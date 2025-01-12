@@ -18,4 +18,7 @@ literally, i just had to import all necessary modules for me to work well:
     from src.performance import Performance
     ```
 
-i also created the data loader
+i also created the data loader too:     ```python
+    data_loader = DataLoader(symbol='EURUSD', start_date='2022-01-01', end_date='2023-01-01')
+    data = data_loader.fetch_data()
+    ```
