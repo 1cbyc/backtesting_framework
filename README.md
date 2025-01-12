@@ -44,3 +44,5 @@ time to evaluate the performance of the model i am learning:
 since it is the weekend, i need to test this strategy on crypto markets. so i have added ccxt to the libraries i am installing.
 
 this whole thing is hinged on utilizing order block strategy!
+
+## random dump
