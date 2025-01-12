@@ -8,4 +8,4 @@ class Performance:
 
     def calculate_metrics(self):
         """trying to calculate key performance metrics."""
-        
+        self.trades['profit'] = self.trades['exit_trade']
