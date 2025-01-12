@@ -11,7 +11,9 @@ class ICTStrategy:
         :return:
         i want to try out the order block strategy to make it work
         """
-        raise NotImplementedError("Subclasses should implement this method.")
+        # raise NotImplementedError("Subclasses should implement this method.")
+        # i want to use the order block strategy, so the strategy is to buy if the price is above the previous day's high, and sell if 
+
 
     def exit_trade(self, market_data):
         """
