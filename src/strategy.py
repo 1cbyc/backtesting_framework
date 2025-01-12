@@ -12,7 +12,9 @@ class ICTStrategy:
         i want to try out the order block strategy to make it work
         """
         # raise NotImplementedError("Subclasses should implement this method.")
-        # i want to use the order block strategy, so the strategy is to buy if the price is above the previous day's high, and sell if 
+        # i want to use the order block strategy, so the strategy is to buy if the price is above the previous day's high, and sell if below the low
+        last_candle = market_data.iloc[-1]
+        if last_candle['Close'] > last_candle['High'] - 0.001: #
 
 
     def exit_trade(self, market_data):
