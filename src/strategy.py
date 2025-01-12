@@ -23,3 +23,4 @@ class ICTStrategy:
         :param market_data:
         :return:
         """
+        raise NotImplementedError("Subclasses should implement this method.")
