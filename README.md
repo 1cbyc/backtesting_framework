@@ -8,4 +8,5 @@ yfinance
 matplotlib
 plotly`
 
-my plan is to test ICT strategies I am learning, like the order blocks (OB) and fair value gap (FVG). 
+my plan is to test ICT strategies I am learning, like the order blocks (OB) and fair value gap (FVG).
+
