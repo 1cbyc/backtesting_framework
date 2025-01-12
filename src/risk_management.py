@@ -9,4 +9,7 @@ class RiskManagement:
             stop_loss_distance (float): The distance from the entry to the stop-loss price.
         Returns:
             float: The position size.
-            """
+        """
+        risk_amount = self.capital * self.risk_per_trade
+        position_size = risk_amount / stop_loss_distance
+        return position_size
