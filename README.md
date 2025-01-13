@@ -59,3 +59,4 @@ i admit, my order block strategy is a simple strategy that generates a "buy" sig
 
 let me work out the performance metrics side of things. creating the `performance.py` script is the way to go right now. let me see if i can wrap my head around it.
 
+okay, let me continue. i stopped at `performance.py` the other day. my wife fell sick!
